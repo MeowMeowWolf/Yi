@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#1e1645"/>
+      <stop offset="55%" stop-color="#100a2a"/>
+      <stop offset="100%" stop-color="#070414"/>
+    </radialGradient>
+    <radialGradient id="starCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="35%" stop-color="#fff0b0"/>
+      <stop offset="100%" stop-color="#ffcc44"/>
+    </radialGradient>
+    <radialGradient id="starHalo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd66b" stop-opacity="0.7"/>
+      <stop offset="45%" stop-color="#f0a020" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#f0a020" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="0.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="circleClip">
+      <circle cx="24" cy="24" r="23.5"/>
+    </clipPath>
+  </defs>
+  <circle cx="24" cy="24" r="23.5" fill="url(#bg)"/>
+  <g clip-path="url(#circleClip)">
+    <circle cx="24" cy="24" r="22" fill="none" stroke="#8b6fd4" stroke-width="0.3" opacity="0.3"/>
+    <circle cx="24" cy="24" r="20.5" fill="none" stroke="#ffd66b" stroke-width="0.2" opacity="0.15"/>
+    <g fill="#ffd66b" opacity="0.35">
+      <circle cx="15" cy="8" r="0.4"/>
+      <circle cx="33" cy="7" r="0.3"/>
+      <circle cx="40" cy="22" r="0.4"/>
+      <circle cx="7" cy="38" r="0.3"/>
+      <circle cx="38" cy="40" r="0.4"/>
+      <circle cx="17" cy="42" r="0.3"/>
+      <circle cx="30" cy="38" r="0.3"/>
+    </g>
+    <g stroke="#ffd66b" stroke-width="0.5" opacity="0.28" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M 11,19 L 11,29 L 20,31 L 22,21 Z"/>
+      <path d="M 22,21 L 28,18 L 34,15 L 40,12"/>
+    </g>
+    <g>
+      <circle cx="11" cy="19" r="4.5" fill="url(#starHalo)"/>
+      <circle cx="11" cy="29" r="4" fill="url(#starHalo)"/>
+      <circle cx="20" cy="31" r="4" fill="url(#starHalo)"/>
+      <circle cx="22" cy="21" r="3.5" fill="url(#starHalo)"/>
+      <circle cx="28" cy="18" r="4.5" fill="url(#starHalo)"/>
+      <circle cx="34" cy="15" r="4" fill="url(#starHalo)"/>
+      <circle cx="40" cy="12" r="4" fill="url(#starHalo)"/>
+    </g>
+    <g filter="url(#glow)">
+      <circle cx="11" cy="19" r="1.9" fill="url(#starCore)"/>
+      <circle cx="11" cy="29" r="1.6" fill="url(#starCore)"/>
+      <circle cx="20" cy="31" r="1.6" fill="url(#starCore)"/>
+      <circle cx="22" cy="21" r="1.3" fill="url(#starCore)"/>
+      <circle cx="28" cy="18" r="2.0" fill="url(#starCore)"/>
+      <circle cx="34" cy="15" r="1.8" fill="url(#starCore)"/>
+      <circle cx="40" cy="12" r="1.8" fill="url(#starCore)"/>
+    </g>
+  </g>
+  <circle cx="24" cy="24" r="23.5" fill="none" stroke="#2a1a50" stroke-width="0.5"/>
+</svg>
